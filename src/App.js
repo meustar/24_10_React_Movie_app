@@ -32,14 +32,12 @@ const foodIKike = [
   },
 ];
 
+function renderFood(dish) {
+  return <Food name={dish.name} picture={dish.image} />;
+}
+
 function App() {
-  return (
-    <div>
-      {foodIKike.map((dish) => (
-        <Food name={dish.name} picture={dish.image} />
-      ))}
-    </div>
-  );
+  return <div>{foodIKike.map(renderFood)}</div>;
 }
 
 export default App;
