@@ -32,6 +32,10 @@ class App extends React.Component {
     console.log("I just updated");
   }
 
+  componentWillUnmount() {
+    console.log("Goodbye, cruel world");
+  }
+
   render() {
     console.log("I'm redering");
     return (
