@@ -31,7 +31,14 @@ class App extends React.Component {
           ? "Loading..."
           : movies.map((movie) => {
               console.log(movie);
-              return <Movie />;
+              return;
+              <Movie
+                id={movie.id}
+                year={movie.year}
+                title={movie.title}
+                summary={movie.summary}
+                poster={movie.medium_cover_image}
+              />;
             })}
       </div>
     );

@@ -5,7 +5,7 @@ function Movie({ id, title, year, summary, poster }) {
   return <h4>{title}</h4>;
 }
 
-Movie.PropTypes = {
+Movie.propTypes = {
   id: PropTypes.number.isRequired,
   year: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
