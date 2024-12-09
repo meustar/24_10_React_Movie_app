@@ -4,6 +4,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Navigation from "./components/Navigation";
 import Detail from "./routes/Detail";
+import "./App.css";
 
 function App() {
   return (

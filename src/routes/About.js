@@ -1,8 +1,7 @@
 import React from "react";
 import "./About.css";
 
-const About = (props) => {
-  console.log(props);
+const About = () => {
   return (
     <div className="about__container">
       <span>

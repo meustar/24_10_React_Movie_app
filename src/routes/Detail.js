@@ -9,12 +9,12 @@ function Detail() {
   useEffect(() => {
     if (!location.state) {
       console.error("location.state is undefined. Redirecting to home.");
-      navigate("/");
+      navigate("/", { replace: true });
     }
   }, [location, navigate]);
 
   if (!location.state) {
-    return null;
+    return null; // Redirect will handle this
   }
 
   const { title, year, summary, poster, genres } = location.state;

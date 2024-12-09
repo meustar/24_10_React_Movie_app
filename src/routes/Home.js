@@ -33,7 +33,7 @@ function Home() {
         <div className="loader">
           <span className="loader__text">Loading...</span>
         </div>
-      ) : (
+      ) : movies.length ? (
         <div className="movies">
           {movies.map((movie) => (
             <Movie
@@ -46,6 +46,10 @@ function Home() {
               genres={movie.genres}
             />
           ))}
+        </div>
+      ) : (
+        <div className="error">
+          Failed to load movies. Please try again later.
         </div>
       )}
     </section>
